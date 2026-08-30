@@ -27,7 +27,7 @@ Works with any agent that reads the Agent Skills format — and ships thin slash
 | Tool | Skill location | Typed `/bro` via |
 |---|---|---|
 | **Hermes Agent** | `~/.hermes/skills/bro/SKILL.md` | skill (auto) |
-| **Claude Code** | `~/.claude/skills/bro/SKILL.md` | `~/.claude/commands/bro.md` |
+| **Claude Code** | `~/.claude/skills/bro/SKILL.md` | skill (auto) |
 | **Cursor** | `~/.cursor/skills/bro/SKILL.md` | skill (`/bro`) |
 | **OpenAI Codex** | `~/.codex/skills/bro/SKILL.md` | `~/.codex/prompts/bro.md` |
 | **opencode** | `~/.config/opencode/skills/bro/SKILL.md` | `~/.config/opencode/command(s)/bro.md` |
@@ -96,6 +96,8 @@ cd bro-skill && git pull && ./install.sh
 | 🔄 **Re-explain, don't re-answer** | Never answers a new question, never adds info, never calls tools |
 | 📏 **Simpler, not shorter** | Clarity over word count — take the space real clarity needs |
 | 📌 **Facts survive verbatim** | Every path, command, filename, number, URL stays *exactly* the same |
+| 🧱 **Code blocks are facts** | Fenced code stays fenced and unchanged — never rewritten into prose |
+| 🪜 **Go simpler each time** | A second `/bro` in a row goes one level simpler than the last rewrite, never repeats it |
 | 🤙 **Light bro flavor** | Casual and direct, not a meme |
 | 🌐 **Same language** | PT-BR in → PT-BR out. English stays English |
 | 🧹 **Flatten structure** | Headers and tables become plain sentences |
@@ -113,7 +115,7 @@ bro-skill/
 
 ## Contributing
 
-It's a 30-line prompt file. If you have a genuinely better phrasing, open a PR — keep the facts-verbatim rule sacred.
+It's a ~35-line prompt file. If you have a genuinely better phrasing, open a PR — keep the facts-verbatim rule sacred.
 
 ## License
 

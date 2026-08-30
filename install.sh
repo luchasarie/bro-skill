@@ -57,9 +57,8 @@ fi
 # ── Claude Code ───────────────────────────────────────────────
 if want claude "$HOME/.claude" claude; then
   install_skill "$HOME/.claude/skills"
-  printf -- '---\ndescription: Re-explain the last answer in plain language ("bro what" mode)\n---\n\n%s\n' "$BODY" \
-    | write_cmd "$HOME/.claude/commands/bro.md"
-  INSTALLED+=("Claude Code    → ~/.claude/skills/bro/ + /bro command")
+  rm -f "$HOME/.claude/commands/bro.md"  # skills are exposed as /bro natively; drop the old duplicate wrapper
+  INSTALLED+=("Claude Code    → ~/.claude/skills/bro/SKILL.md")
 fi
 
 # ── Cursor ────────────────────────────────────────────────────

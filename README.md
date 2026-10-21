@@ -22,6 +22,12 @@ No new information. No new answers. Just the same thing, said in a way that's im
 
 It's one markdown file. The whole skill is [`SKILL.md`](SKILL.md).
 
+### See it in 30 seconds
+
+https://github.com/user-attachments/assets/8f4faf72-a0cf-40b1-befa-1102c6b1aef3
+
+[Download the MP4](assets/demo.mp4)
+
 ## Compatibility
 
 Works with any agent that reads the Agent Skills format — and ships thin slash-command wrappers where a skill alone doesn't give you a typed `/bro`:
